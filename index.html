@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<title>ИграПереносЭнергии</title>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic"/>
+	<link rel="stylesheet" href="styles/index.css"/>
+
+</head>
+<body>
+<header>
+	<h1>Игра "Перенос энергии"</h1>
+</header>
+<aside>
+	<form>
+		<ul>
+			<li>
+				<label>Необходимо с помощью транспорта довести энергию от положительной энергии слева до приёмника справа в количестве 65%</label>
+			</li>
+			<li>
+				<label>Сложность заключается в том, что в пространстве игрока есть скрытый объект - отрицательная энергия</label>
+			</li>
+			<li>
+				<label>Чем ближе к ней стоит транспорт, тем быстрее сжигается энергия транспорта, если транспорт мерцает, ваша энергия нещадно сгорает</label>
+			</li>
+			<li>
+				<label>Вы можете удалить транспорт, однако вся поступившая туда энергия исчезнет</label>
+			</li>
+			<li>
+				<label>Чем дальше от друг друга стоят транспорта - тем больше вы теряете за перевозку</label>
+			</li>
+		</ul>
+	</form>
+	<form class="inlineblock">
+		<button class="butt1" id="replay">Перезапуск</button>
+	</form>
+	<form class="inlineblock" action="" method="" onsubmit="return false;">
+		<button class="butt" id="addTr">Добавить транспорт</button>
+		<button class="butt" id="setTr">Установить транспорт</button>
+		<button class="butt" id="delTr">Удалить последний</button>
+	</form>
+</aside>
+<main id='main'>
+	<script src="scripts/raphael.js"></script>
+</main>
+<div class="row">
+	<div class="right_content_border" id="text0">Положительная энергия:</div>	<div id="t0"></div>
+	<div class="right_content_border" id="text1"></div>							<div id="t1"></div>
+	<div class="right_content_border" id="text2"></div>							<div id="t2"></div>
+	<div class="right_content_border" id="text3"></div>							<div id="t3"></div>
+	<div class="right_content_border" id="text4"></div>							<div id="t4"></div>
+	<div class="right_content_border" id="text5"></div>							<div id="t5"></div>
+	<div class="right_content_border" id="text6"></div>							<div id="t6"></div>
+	<div class="right_content_border" id="text7"></div>							<div id="t7"></div>
+	<div class="right_content_border" id="text8"></div>							<div id="t8"></div>
+	<div class="right_content_border" id="text9"></div>							<div id="t9"></div>
+	<div class="right_content_border" id="text10"></div>						<div id="t10"></div>
+	<div class="right_content_border" id="text11"></div>						<div id="t11"></div>
+	<div class="right_content_border" id="text12"></div>						<div id="t12"></div>
+	<div class="right_content_border" id="text13"></div>						<div id="t13"></div>
+	<div class="right_content_border" id="text14"></div>						<div id="t14"></div>
+	<div class="right_content_border" id="text15"></div>						<div id="t15"></div>
+	<div class="right_content_border" id="text16"></div>						<div id="t16"></div>
+	<div class="right_content_border" id="text17"></div>						<div id="t17"></div>
+	<div class="right_content_border" id="text18"></div>						<div id="t18"></div>
+	<div class="right_content_border" id="text19"></div>						<div id="t19"></div>
+	<div class="right_content_border" id="text20"></div>						<div id="t20"></div>
+	<div class="right_content_border" id="textContainer">Приёмник энергии:</div><div id="container"></div>
+</div>
+<script src="scripts/require.js" data-main="scripts/index"></script>
+</body>
+</html>
